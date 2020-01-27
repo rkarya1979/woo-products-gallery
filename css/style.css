@@ -1,0 +1,106 @@
+/* css class*/
+.wpggallery {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.wpggallery li{
+	float:left; 
+	overflow:hidden;
+	padding:0px; 
+	margin:0px;
+}
+.wpggallery li a{
+	display:block;
+}
+.wpggallery li img{
+	border:0px; 
+	display:block;
+	box-shadow:none !important;
+}
+
+.wpgmodal {
+  display: none;
+  background-color: transparent;
+  transition: all 0.25s ease;
+}
+.wpgmodal.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wpgmodal .content-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  margin: 0;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.5);
+}
+
+.wpgmodal .content-wrapper .close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  transition: 0.25s linear;
+}
+
+.wpgmodal .content-wrapper .close:before, .wpgmodal .content-wrapper .close:after {
+  position: absolute;
+  content: '';
+  width: 1.25rem;
+  height: 0.125rem;
+  background-color: black;
+}
+
+.wpgmodal .content-wrapper .close:before { transform: rotate(-45deg); }
+.wpgmodal .content-wrapper .close:after { transform: rotate(45deg); }
+.wpgmodal .content-wrapper .close:hover { transform: rotate(360deg); }
+.wpgmodal .content-wrapper .close:hover:before, .modal .content-wrapper .close:hover:after { background-color: tomato; }
+
+.wpgmodal .content-wrapper .content {
+  position: relative;
+  display: flex;
+}
+
+.wpgmodal .content-wrapper .content p {
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+.wpgmodal .popup-content ul li{
+	margin:0px 20px 20px;
+}
+.wpgmodal .popup-content ul li:nth-child(3n){
+	margin:0px 0px 20px 20px;
+}
+.wpgmodal .popup-content ul li a,.wpgmodal .popup-content ul li a:hover{
+	text-decoration:none;
+	box-shadow:none;
+}
+.wpgmodal .popup-content ul li h3{
+	font-size: 16px;
+    padding-top: 12px;
+	text-align: center;
+	text-transform:uppercase;
+}
+.wpgmodal .popup-content .price{text-align:center;}
